@@ -13,7 +13,6 @@ class CategoryItem extends StatelessWidget {
       // const ile bu build method çalıştırıldığında, buradaki bu nesne yeniden oluşturulmayacaktır
       // çünkü Flutter bunun sabit olduğunu, değiştirilemeyeceğini ve dolayısıyla eskisini kullanması gerektiğini algılar.
       child: Text(title),
-      color: color,
       decoration: BoxDecoration(
           gradient: LinearGradient(
               colors: [color.withOpacity(0.7), color],
