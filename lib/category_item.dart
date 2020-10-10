@@ -12,7 +12,13 @@ class CategoryItem extends StatelessWidget {
       padding: const EdgeInsets.all(15),
       // const ile bu build method çalıştırıldığında, buradaki bu nesne yeniden oluşturulmayacaktır
       // çünkü Flutter bunun sabit olduğunu, değiştirilemeyeceğini ve dolayısıyla eskisini kullanması gerektiğini algılar.
-      child: Text(title),
+      child: Text(
+        title,
+        style: TextStyle(
+            fontFamily: "RobotoCondensed",
+            fontSize: 18,
+            fontWeight: FontWeight.bold),
+      ),
       decoration: BoxDecoration(
           gradient: LinearGradient(
               colors: [color.withOpacity(0.7), color],
