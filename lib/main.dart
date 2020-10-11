@@ -14,9 +14,11 @@ class MyApp extends StatelessWidget {
           accentColor: Colors.amber,
           scaffoldBackgroundColor: Color.fromRGBO(255, 254, 229, 1),
           fontFamily: "Raleway"),
-      home: CategoriesScreen(),
+      // home: CategoriesScreen(),
+      initialRoute: "/",
       routes: {
-        "/category-meals": (ctx) => CategoryMealsScreen(),
+        "/": (ctx) => CategoriesScreen(),
+        CategoryMealsScreen.routeName: (ctx) => CategoryMealsScreen(),
       },
     );
   }
