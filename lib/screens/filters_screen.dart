@@ -9,7 +9,8 @@ class FiltersScreen extends StatelessWidget {
         appBar: AppBar(
           title: Text("Your Filters"),
         ),
-        drawer: MainDrawer(),
+        drawer:
+            MainDrawer(), // drawer ile filter sayfasından geri donulmesi hamburger menu ile saglanıyor.
         body: Center(child: Text("Filters")));
   }
 }
