@@ -63,7 +63,6 @@ class _CategoryMealsScreenState extends State<CategoryMealsScreen> {
               duration: cMI.duration,
               complexity: cMI.complexity,
               affordability: cMI.affordability,
-              removeItem: _removeMeal,
             );
           },
           itemCount: displayedMeals.length,
