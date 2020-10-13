@@ -40,10 +40,12 @@ class MainDrawer extends StatelessWidget {
           ),
           SizedBox(height: 20),
           buildListTile("Meals", Icons.restaurant, () {
-            Navigator.of(context).pushNamed("/");
+            Navigator.of(context).pushReplacementNamed("/");
+            // pushNamed yerine pushReplacementNamed kullanarak yığın olışmasının önüne geçiliyor.
+            // artık yığındaki mevcut sayfayı yeni sayfayla değiştirecektir.
           }),
           buildListTile("Filters", Icons.settings, () {
-            Navigator.of(context).pushNamed(FiltersScreen.routeName);
+            Navigator.of(context).pushReplacementNamed(FiltersScreen.routeName);
           }),
         ],
       ),
